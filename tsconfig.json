@@ -19,5 +19,7 @@
     {
       "path": "./apps/player-app"
     }
-  ]
+  ],
+  "compilerOptions": {},
+  "extends": "expo/tsconfig.base"
 }

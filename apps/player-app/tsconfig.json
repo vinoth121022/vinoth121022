@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["react"],
+    "paths": {
+      "@chessalive/assets": ["../../packages/assets/src"],
+      "@chessalive/chess-core": ["../../packages/chess-core/src"],
+      "@chessalive/funny-mode": ["../../packages/funny-mode/src"],
+      "@chessalive/services": ["../../packages/services/src"],
+      "@chessalive/ui": ["../../packages/ui/src"]
+    }
+  },
+  "include": [
+    "index.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../../packages/**/*.ts",
+    "../../packages/**/*.tsx"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "ChessAlive",
+    "slug": "chessalive",
+    "scheme": "chessalive",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B2230"
+    },
+    "newArchEnabled": true,
+    "platforms": ["ios", "android", "web"],
+    "assetBundlePatterns": ["assets/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chessalive.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.chessalive.app",
+      "versionCode": 1,
+      "permissions": [],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B2230"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

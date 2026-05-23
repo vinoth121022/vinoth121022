@@ -1,0 +1,35 @@
+{
+  "name": "chessalive",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ChessAlive is a funny, cinematic chess game for web, iOS, and Android.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace @chessalive/player-app run web",
+    "dev:server": "npm --workspace @chessalive/realtime-server run dev",
+    "build:web": "npm --workspace @chessalive/player-app run build:web",
+    "serve:prod": "CHESSALIVE_WEB_ROOT=$PWD/apps/player-app/dist CHESSALIVE_REALTIME_PORT=8080 npm --workspace @chessalive/realtime-server run start",
+    "mobile": "npm --workspace @chessalive/player-app run start",
+    "mobile:prebuild": "npm --workspace @chessalive/player-app run prebuild",
+    "mobile:android": "npm --workspace @chessalive/player-app run build:android",
+    "mobile:ios": "npm --workspace @chessalive/player-app run build:ios",
+    "mobile:android:preview": "npm --workspace @chessalive/player-app run build:android:preview",
+    "mobile:submit:android": "npm --workspace @chessalive/player-app run submit:android",
+    "mobile:submit:ios": "npm --workspace @chessalive/player-app run submit:ios",
+    "typecheck": "npm --workspace @chessalive/player-app run lint",
+    "lint": "npm --workspace @chessalive/player-app run lint",
+    "test": "npm --workspace @chessalive/player-app run test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "chess.js": "^1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

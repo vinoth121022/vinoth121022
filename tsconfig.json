@@ -1,0 +1,23 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/chess-core"
+    },
+    {
+      "path": "./packages/services"
+    },
+    {
+      "path": "./packages/funny-mode"
+    },
+    {
+      "path": "./packages/assets"
+    },
+    {
+      "path": "./packages/ui"
+    },
+    {
+      "path": "./apps/player-app"
+    }
+  ]
+}

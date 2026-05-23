@@ -1,0 +1,49 @@
+{
+  "name": "@chessalive/player-app",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:web": "expo export --platform web --output-dir dist",
+    "render:pawn-animations": "node scripts/render-pawn-animation-sprites.js",
+    "render:piece-animations": "node scripts/render-piece-animation-sprites.js",
+    "render:static-pieces": "node scripts/render-static-meshy-pieces.js",
+    "render:static-pawns": "node scripts/render-static-pawn-pieces.js",
+    "prebuild": "expo prebuild --clean",
+    "build:android": "eas build --platform android --profile production",
+    "build:ios": "eas build --platform ios --profile production",
+    "build:android:preview": "eas build --platform android --profile preview",
+    "submit:android": "eas submit --platform android --profile production",
+    "submit:ios": "eas submit --platform ios --profile production",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "test": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@chessalive/assets": "0.1.0",
+    "@chessalive/chess-core": "0.1.0",
+    "@chessalive/funny-mode": "0.1.0",
+    "@chessalive/services": "0.1.0",
+    "@chessalive/ui": "0.1.0",
+    "@expo/metro-runtime": "~55.0.11",
+    "expo": "^55.0.23",
+    "html-to-image": "^1.11.13",
+    "lucide-react-native": "^1.14.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-native": "0.83.6",
+    "react-native-svg": "15.15.3",
+    "react-native-web": "^0.21.0",
+    "stockfish": "^18.0.7",
+    "three": "^0.184.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/three": "^0.184.1",
+    "eas-cli": "^18.11.0",
+    "jimp-compact": "^0.16.1"
+  }
+}
